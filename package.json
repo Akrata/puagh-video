@@ -1,0 +1,25 @@
+{
+  "name": "puagh-video",
+  "version": "1.0.0",
+  "description": "Proyecto del cusro profesional de JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akrata/puagh-video.git"
+  },
+  "keywords": [
+    "puagh"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Akrata/puagh-video/issues"
+  },
+  "homepage": "https://github.com/Akrata/puagh-video#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

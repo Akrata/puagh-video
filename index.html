@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puagh Video</title>
+</head>
+<body>
+    <main>
+        <video src="https://ia800201.us.archive.org/12/items/BigBuckBunny_328/BigBuckBunny_512kb.mp4"></video>
+        <button>Play/Pause</button>
+    </main>
+    <script>
+        const video = document.querySelector("video");
+        const button = document.querySelector("button");
+
+        function MediaPlayer(config){
+            this.media = config.el
+        }
+        
+        MediaPlayer.prototype.play = function(){
+            if(this.media.paused){
+                this.media.play();
+            }else{
+                this.media.pause();
+            }
+            
+        }
+       
+        
+
+        const player = new MediaPlayer({el: video});
+           
+        
+            button.onclick = () => player.play();
+       
+       
+
+    </script>
+</body>
+</html>
